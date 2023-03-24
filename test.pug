@@ -1,0 +1,17 @@
+mixin test (title,haha,image,price)
+    p.ok=title 
+    p.yeah ok #{haha}
+    .card-image
+        img(src=image, alt='')
+        p.card-note From $#{price}
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        +test("Thailands Ayutthaya Temples Cruise from Bangkok",9,"./images/card1.png",10)
+        +test("yeah",10,"./images/card1.png",10)

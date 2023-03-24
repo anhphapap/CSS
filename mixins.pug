@@ -1,0 +1,32 @@
+mixin cardItem(image,price,title,time,tourPrice)
+  .card
+      .card-header
+        .card-image
+          img(src=image, alt='')
+          .card-note
+            p From $#{price}
+      .card-content
+        .card-title
+          p=title
+        .card-ratting
+          .card-review
+            img(src='./images/star.png')
+            p 4.8 (12 reviews)
+          .card-duration
+            p Duration: #{time} hours
+        .card-price
+          a(href='https://evondev.com', target='_blank', rel='noopener noreferrer') Tours Price $#{tourPrice}
+
+mixin popularItem(image,title)
+  .popular 
+    .popular-image 
+      .popular-overlay
+      img(src=image)
+      .popular-button 
+        a(href='https://evondev.com', target='_blank', rel='noopener noreferrer') Must See
+    .popular-content 
+      p.popular-time Sep 28 10:00 AM - 1:00 PM
+      p.popular-title=title
+      .popular-review 
+        img(src="./images/star.png")
+        span 4.8 (12 reviews)

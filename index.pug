@@ -1,0 +1,82 @@
+include ./mixins
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Master
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap', rel='stylesheet')
+  link(rel='stylesheet', href='main.css')
+body
+  header 
+  main
+    section.container
+      h2 Top Bangkok Tours
+      .card-list
+        +cardItem("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80",40,"Thailands Ayutthaya Temples Cruise from Bangkok",10,61)
+        +cardItem("https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",40,"FLoating Markets Day Trip from Bangkok",10,61)
+        +cardItem("https://plus.unsplash.com/premium_photo-1671639169115-7cb03db6167a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",40,"Bangkok Dinner Cruise on the Chao Phraya River ",10,61)
+    section.container
+      h2 Popular things to do in Bangkok
+      .popular-list
+        +popularItem("https://images.unsplash.com/photo-1679345506099-baca3b043efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80","The Grand Palace")
+        +popularItem("https://images.unsplash.com/photo-1679236630000-efdb716ed708?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Chatuchak Weekend")
+        +popularItem("https://images.unsplash.com/photo-1679364297777-1db77b6199be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80","Wat Pho")
+        +popularItem("https://images.unsplash.com/photo-1669427830962-42733e5597f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Temple Of Dawn")
+    section.container 
+      h2.title Hidden gems in Bangkok
+      .gem-list 
+        each val in ["https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1121&q=80","https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80","https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"]
+          .gem-item
+            img(src=val)
+    section.d-container 
+      h2.title Hidden diamonds in Bangkok
+      .diamond-list 
+        each val in["https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1121&q=80","https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"]
+          .diamond-item
+            .diamond-image
+              .diamond-overlay
+              img(src=val)
+              .diamond-content 
+                p.diamond-title Bangkok Trip
+                p.diamond-time 27 Sep, 2020
+      .diamond-button
+        a(href='https://evondev.com', target='_blank', rel='noopener noreferrer') Explore All
+  footer.footer 
+    .footer-container
+      .footer-top 
+        .footer-links 
+          .footer-link 
+            img.logo(src="./images/logo.png") 
+            p Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.
+            .footer-subscribe 
+              .footer-button
+                input(type="text" placeholder="Enter your email")
+                button 
+                  img(src="./images/arrow.svg")
+          .footer-link 
+            h3 Services
+            each val in["Trip Planner","Tour Planning","Tour Guide","Tour Package","Tour advice"]
+              a.footer-link(href="/")=val 
+          .footer-link 
+            h3 Support
+            each val in["Account","Legal","Contact","Terms & Condition","Privacy Policy"]
+              a.footer-link(href="/")=val 
+          .footer-link 
+            h3 Business
+            each val in["Success","About Locato","Blog","Information","Travel Guide"]
+              a.footer-link(href="/")=val 
+      .footer-bottom
+        .footer-content 
+          p Copyright© 2021 UIHUT LLC. All rights reserved
+          .footer-social 
+            each s in ["./images/f1.png","./images/linkedin.svg","./images/twitter.png","./images/line.png"]
+              .footer-item 
+                img(src=s)
+
+
+
+
