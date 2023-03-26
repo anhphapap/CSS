@@ -1,0 +1,31 @@
+.header .container{
+    padding: 0;
+    max-width: 100%;
+}
+
+.header{
+    &-list{
+        padding: 16px 0;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 6px 30px rgba(15, 15, 15, 0.06);
+    }
+    &-item{
+        text-decoration: none;
+        color: #777E91;
+        font-size: 14px;
+        font-weight: 500;
+        display: block;
+        padding: 14px 22px;
+        background: #F4F5F9;
+        border-radius: 10px;
+        transition: all 0.25s linear;
+        &:hover{
+            background: #3B71FE;
+            color: white;
+            font-weight: 700;
+        }
+    }
+}

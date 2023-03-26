@@ -1,0 +1,107 @@
+.footer{
+    margin-bottom: 70px;
+    &-container{
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    &-link h3{
+        color:black;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    
+    &-link img{
+        height: 40px;
+        object-fit: cover;
+        display: block;
+        width: 120px;
+        margin-bottom: 40px;
+    }
+    
+    &-link:first-child{
+        max-width: 268px;
+    
+    }
+    
+    &-link:first-child p{
+        margin-bottom: 30px;
+    }
+    
+    &-links{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom:70px ;
+        border-bottom: 1px solid #E6E8EC;
+    }
+    
+    &-link{
+        text-decoration: none;
+        color: #777E91;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    
+    &-subscribe button{
+        border: none;
+        background: #3B71FE;
+        color: #FFFFFF;
+        outline: none;
+        border-radius: 100rem;
+    }
+    
+    &-subscribe img{
+        width: 14px;
+        height: 8px;
+        margin: 12px 9px;
+        display: block;
+    }
+    
+    &-subscribe input{
+        width: 100%;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        outline: none;
+        padding-left: 18px;
+        padding-right: 8px;
+        background-color: #FFFFFF;
+    }
+    
+    &-subscribe{
+        border:2px solid #B1B5C3;
+        border-radius: 100rem;
+        padding: 8px;
+        width: 253px;
+    }
+    
+    &-button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+    
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        margin-top:40px ;
+    }
+    
+    &-content p{
+        color: #B1B5C3;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    
+    &-social{
+        display: flex;
+        gap: 14px;
+        align-items: center;
+    }
+}

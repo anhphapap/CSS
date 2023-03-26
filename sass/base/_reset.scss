@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background:#FCFCFC;
+    font-weight: 400;
+}
+
+h2{
+    margin: 34px auto;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 24px 0;
+}
