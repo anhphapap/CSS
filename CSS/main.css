@@ -429,7 +429,18 @@ h2 {
     padding-block: 30px;
     margin-block: 20px;
   }
-  .card-list, .popular-list {
+  .popular-list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    grid-template-columns: repeat(4, minmax(80%, 100%));
+    padding-block: 20px;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+  }
+  .popular {
+    scroll-snap-align: start;
+  }
+  .card-list {
     flex-direction: column;
     --gap:20px;
     --column:1;
