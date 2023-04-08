@@ -159,10 +159,8 @@ body{
 }
 
 .drop-down{
-    display: block;
     position: relative;
     cursor: pointer;
-    margin-bottom: 200px;
 }
 
 .drop-button{
@@ -209,10 +207,9 @@ body{
     display: block;
 }
 
-.drop-down:hover .drop-button path{
-    fill: white;
-}
-
+.drop-button svg{
+    color: ;
+} 
 
 .drop-list{
     height: 120px;
@@ -239,33 +236,6 @@ body{
 
 .drop-item:hover{
     background-color: #F4F5F9;
-}
-
-.card{
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 400px;
-    height: 500px;
-    transition: all 0.3s ease-in;
-    padding: 10px;
-}
-
-.card-image{
-    overflow: hidden;
-    border-radius: inherit;
-}
-
-.card-img{
-
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-img:hover{
-    scale: 1.5;
 }
 
 

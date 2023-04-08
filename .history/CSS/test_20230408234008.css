@@ -247,13 +247,8 @@ body{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 400px;
     height: 500px;
-    transition: all 0.3s ease-in;
-    padding: 10px;
-}
-
-.card-image{
     overflow: hidden;
-    border-radius: inherit;
+    transition: all 0.3s ease-in;
 }
 
 .card-img{

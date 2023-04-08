@@ -249,14 +249,10 @@ body{
     height: 500px;
     transition: all 0.3s ease-in;
     padding: 10px;
-}
-
-.card-image{
     overflow: hidden;
-    border-radius: inherit;
 }
 
-.card-img{
+.card-imag{
 
     border-radius: 10px;
     width: 100%;

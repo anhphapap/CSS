@@ -251,17 +251,14 @@ body{
     padding: 10px;
 }
 
-.card-image{
-    overflow: hidden;
-    border-radius: inherit;
-}
-
 .card-img{
 
     border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
+    
 }
 
 .card-img:hover{

@@ -253,7 +253,7 @@ body{
 
 .card-image{
     overflow: hidden;
-    border-radius: inherit;
+    border-radius: 10px;
 }
 
 .card-img{
