@@ -1,0 +1,103 @@
+@media screen and (max-width: 767.98px) {
+    h2{
+        font-size: 18px !important;
+        color: #353945;
+        padding: 0;
+        margin: 0 0 20px;
+    }
+    .container,.d-container{
+        padding-block: 30px ;
+        margin-block: 20px;
+    }
+
+    .popular-list{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        grid-template-columns: repeat(4,minmax(80%,100%));
+        padding-block: 20px;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop:always;
+    }
+
+    .popular{
+        scroll-snap-align: start;
+    }
+
+    .card-list{
+        flex-direction: column;
+        --gap:20px;
+        --column:1;
+    } 
+    .card-title{
+        font-size: 16px;
+    }
+    .card-ratting, .card-price a{
+        font-size: 12px;
+    }
+    .card-price{
+        height: 31px;
+        width: 119px;
+        line-height: 31px;
+    }
+    .diamond-list{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .diamond-item{
+        height: 148px;
+        padding: 8px;
+    }
+    .diamond-content{
+        bottom: 10px;
+        left: 20px;
+    }
+    .diamond-time{
+        font-size: 10px;
+    }
+    .diamond-title{
+        font-size: 16px;
+    }
+    .diamond-button{
+        margin: 20px auto;
+    }
+    .diamond-button a{
+        font-size: 16px;
+        padding: 4px 20px;
+    }
+    .footer-links,.footer-content{
+        flex-direction: column;
+        padding: 30px 24px;
+        gap: 30px;
+        border: none;
+    }
+    .footer{
+        margin: 0;
+    }
+    .header-list
+    {
+        padding: 10px 0;
+        gap:6px;
+    }
+
+    .header .container
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-item
+    {
+        font-size: 7px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+    .popular-list{
+        --column:2;
+        --gap:20px;
+    }
+}
+
+
